@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Mouse
+Teclado
+Fone
+Celular
+Computador
