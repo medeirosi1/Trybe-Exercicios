@@ -1,0 +1,5 @@
+ ul:first-of-type li:first-of-type + li {
+    color: red;
+  } 
+
+

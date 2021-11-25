@@ -1,0 +1,19 @@
+h1, p, ul {
+    text-align: center;
+    list-style: none;
+}
+
+li {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+li:hover {
+    background-color: peru;
+}
+
+li:active {
+    color: red;
+}
+
