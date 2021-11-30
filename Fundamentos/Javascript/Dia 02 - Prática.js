@@ -9,7 +9,7 @@ for(i = 0; i < numbers.length; i += 1){
 // 2. Para o segundo exercício, some todos os valores contidos no array e imprima o resultado;
 
 let soma = 0;
-for(var i = 0; i < numbers.length; i += 1){
+for(let i = 0; i < numbers.length; i += 1){
     
     soma += numbers[i];
     console.log(soma);
@@ -19,7 +19,7 @@ for(var i = 0; i < numbers.length; i += 1){
 
 let soma = 0;
 let media = 0
-for(var i = 0; i < numbers.length; i += 1){
+for(let i = 0; i < numbers.length; i += 1){
     
     media = (soma += numbers[i]) / numbers.length;  
    
@@ -30,7 +30,7 @@ console.log(media);
 
 let soma = 0;
 let media = 0
-for(var i = 0; i < numbers.length; i += 1){
+for(let i = 0; i < numbers.length; i += 1){
     media = (soma += numbers[i]) / numbers.length;    
 } 
 if  (media > 20){
@@ -43,7 +43,7 @@ if  (media > 20){
 
 
 let numeroMaior = numbers[0];
-for(var i = 0; i < numbers.length; i += 1) {
+for(let i = 0; i < numbers.length; i += 1) {
     if(numbers[i] > numeroMaior){
         numeroMaior = numbers[i]
     }
@@ -62,7 +62,7 @@ for(i = 0; i < numbers.length; i += 1){
 // 7. Utilizando for , descubra qual o menor valor contido no array e imprima-o;
 
 let numeroMenor = numbers[0];
-for(var i = 0; i < numbers.length; i += 1) {
+for(let i = 0; i < numbers.length; i += 1) {
     if(numbers[i] < numeroMenor){
         numeroMenor = numbers[i]
     }
