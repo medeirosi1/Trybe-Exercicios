@@ -16,15 +16,9 @@ function corFundoNoEmergency (color){
 }
 corFundoNoEmergency("Khaki")
 
-function footerFundo (color){
-    let footer = document.querySelector("#footer-container");
-    footer.style.backgroundColor = color;
-}
-footerFundo("green");
-
 function corTextFundoEmergency (color1, color2) {
     let h3 = document.querySelectorAll("h3");
-    for (let i = 0; i <= h3.length; i += 1){
+    for (let i = 0; i < h3.length; i += 1){
         if (i < 2){
             h3[i].style.backgroundColor = color1;
         } else {
@@ -34,3 +28,8 @@ function corTextFundoEmergency (color1, color2) {
 } 
 corTextFundoEmergency ("purple", "black");
 
+function footerFundo (color){
+    let footer = document.querySelector("#footer-container");
+    footer.style.backgroundColor = color;
+}
+footerFundo("green");
