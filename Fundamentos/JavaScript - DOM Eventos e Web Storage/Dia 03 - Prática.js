@@ -61,3 +61,22 @@ function eventButton (){
         }
     }
 }
+
+// Exercicio 4:
+function button2 (sextou){
+    let botao2 = document.createElement('button');
+    botao2.className = 'btn-friday'
+    botao2.innerText = sextou;
+    document.querySelector('.buttons-container').appendChild(botao2);
+}
+button('Sexta-Feira');
+
+// Exercicio 5:
+
+
+function evento (){
+    let friday1 = document.querySelectorAll('.friday');
+    for (let i = 0; i < friday1.length; i +=1){
+        friday1[i].innerText = "sextou";
+    }
+}
