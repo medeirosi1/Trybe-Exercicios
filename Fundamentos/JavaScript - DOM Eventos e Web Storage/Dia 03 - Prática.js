@@ -39,9 +39,9 @@ daysOfTheMonth();
 // Exercicos 2:
 function button (feriados) {
     let botao = document.createElement('button');
-    botao.id = "btn-holiday"
+    botao.id = 'btn-holiday'
     botao.innerText = feriados;
-    document.querySelector(".buttons-container").appendChild(botao);
+    document.querySelector('.buttons-container').appendChild(botao);
 } 
 button("Feriados");
 
@@ -65,18 +65,118 @@ function eventButton (){
 // Exercicio 4:
 function button2 (sextou){
     let botao2 = document.createElement('button');
-    botao2.className = 'btn-friday'
+    botao2.id = 'btn-friday'
     botao2.innerText = sextou;
     document.querySelector('.buttons-container').appendChild(botao2);
 }
-button('Sexta-Feira');
+button2('Sexta-Feira');
 
 // Exercicio 5:
-
+let friday = document.getElementById("btn-friday");
+friday.addEventListener('click', evento);
 
 function evento (){
     let friday1 = document.querySelectorAll('.friday');
+    let diassexta = [4,11,18,25];
     for (let i = 0; i < friday1.length; i +=1){
-        friday1[i].innerText = "sextou";
+        if(friday1[i].innerText === 'Sextou'){
+        friday1[i].innerText = diassexta[i];
+        } else {
+            friday1[i].innerText = 'Sextou';
+        }
     }
 }
+
+// Exercicio 6:
+let zoomday = document.querySelectorAll('.day');
+
+function dayover () {
+for (let i = 0; i < zoomday.length; i += 1){
+   let zoom = zoomday[i];
+   zoom.addEventListener('mouseover', zoomdays);
+}
+
+function zoomdays (event){
+    event.target.style.transform = 'scale(2)'
+}
+}
+dayover();
+
+function dayleave (){
+for (let i = 0; i < zoomday.length; i += 1){
+   let zoom = zoomday[i];
+   zoom.addEventListener('mouseleave', zoomdays2);
+}
+function zoomdays2 (event){
+    event.target.style.transform = 'scale(1)'
+}
+}
+dayleave();
+
+
+// Exercicio 7:
+function addtarefa (tarefas) {
+  let tarefa = document.createElement('span');
+  tarefa.innerText = tarefas
+  document.querySelector('.my-tasks').appendChild(tarefa);
+}
+addtarefa('Cozinhar');
+
+// Exercicio 8:
+function legendacor (cor){
+    let createlegenda = document.createElement('div');
+    createlegenda.className = 'task';
+    createlegenda.style.backgroundColor = cor;
+    document.querySelector('.my-tasks').appendChild(createlegenda);
+}
+legendacor ('green');
+
+// Exercicio 9:
+function clicktagcor (){
+    let clickcor = document.querySelector('.task');
+    clickcor.addEventListener('click', clicando);
+
+    function clicando (e){
+        if (e.target.className === 'task'){
+        e.target.className = 'task selected';
+        } else {
+            e.target.className = 'task';
+        }
+    }
+}
+clicktagcor();
+
+// Exercicio 10:
+function daylegend (){
+    let legend = document.querySelectorAll('.day');
+    for (let i = 0; i < legend.length; i += 1){
+        let click = legend[i];
+        click.addEventListener('click', selectday);
+    }
+
+    function selectday (event){
+        if (document.querySelector('.selected')){
+            if (event.target.style.color === 'green') {
+            event.target.style.color = 'rgb(119,119,119)';
+            } else {
+                event.target.style.color = 'green';
+            }
+        }
+    }
+}
+daylegend();
+
+// Bonus:
+function meuscompromissos (){
+    let adicionar = document.getElementById('btn-add');
+    adicionar.addEventListener('click', add);
+
+    function add (){
+       let escrever = document.getElementById('task-input').value;
+       let lista = document.createElement('li');
+       lista.className = 'compromissos';
+       document.querySelector('.task-list').appendChild(lista);
+       document.querySelector('.compromissos').innerHTML = escrever;
+    }
+}
+meuscompromissos()
