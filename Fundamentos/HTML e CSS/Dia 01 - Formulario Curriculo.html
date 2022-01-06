@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="CSS/Dia 01 - Curriculo.css">
+</head>
+<header>
+    <h1>Currículo</h1>
+</header>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Escreva seu Currículo</legend>
+            <label for="name">Nome:<input type="text" name="name" id="name" maxlength="40" required></label>
+            <label for="email">Email:<input type="text" name="email" id="email" maxlength="50" required></label>
+            <label for="cpf">CPF:<input type="text" name="cpf" id="cpf" maxlength="11" required></label>
+            <label for="endereço">Endereço:<input type="text" name="endereço" id="endereço" maxlength="200" required></label>
+            <label for="city">Cidade:<input type="text" name="city" id="city" maxlength="28" required></label>
+            <label for="states">Estados:<select name="states" id="states" required></select></label>
+            <div class="div">
+                <label for="tipo">Casa <input type="radio" name="tipo" id="tipo" required></label>
+                <label for="tipo">Apartamento <input type="radio" name="tipo" id="tipo2" required></label>
+            </div>
+        </fieldset>
+        <div class="div2">
+            <fieldset>
+                <legend>Último Emprego</legend>
+                <label for="resumo">Resumo:<textarea name="resumo" id="resumo" maxlength="1000" required></textarea></label>
+                <label for="cargo">Cargo: <input type="text" name="cargo" id="cargo" maxlength="40" required></label>
+                <label for="dcargo">Descrição do cargo: <input type="text" name="dcargo" id="dcargo" maxlength="500" required></label>
+            </fieldset>
+    </form>
+    <script src="Dia 01 - Curriculo.js"></script>
+</body>
+</html>

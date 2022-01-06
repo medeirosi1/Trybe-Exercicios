@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hotel Trybe</title>
+</head>
+<header class="header-trybe">
+  <h1>Hotel Trybe</h1>
+  <img src="https://remotar.com.br/wp-content/uploads/2020/10/Trybe-200x200.jpg" alt="Logo da Trybe">
+</header>
+<body>
+  <section class="hotel-form">
+    <label for="data">Checkin: <input type="date" name="data" id="data" class="inputCheckin"></label>
+    <label for="data">Chekout: <input type="date" name="data" id="data" class="inputCheckout"></label>
+  </section>
+  <section class="hotel-form">
+    <label for="bed">Quarto Comum: <input type="radio" name="bed" id="bed" class="bedroom"></label>
+    <label for="bed1">Quarto Club: <input type="radio" name="bed" id="bed1" class="bedroom"></label>
+    <label for="bed2">Quarto Luxo: <input type="radio" name="bed" id="bed2" class="bedroom"></label>
+  </section>
+  <section class="hotel-form">
+    <label for="people">Pessoas: </label>
+    <select name="people" id="people" class="nPessoas">
+      <option class="nPessoas">1</option>
+      <option class="nPessoas">2</option>
+      <option class="nPessoas">3</option>
+      <option class="nPessoas">4</option>
+    </select>
+  </section>
+  <section class="hotel-form">
+    <textarea name="obser" id="" placeholder="Campo de Observações" class="obs"></textarea>
+  </section>
+  <button id="submit-btn">Enviar</button>
+  <section class="list-section">
+    <h2>Lista de Reservas</h2>
+    <ol></ol>
+    <button id="clear-btn">Limpar</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
