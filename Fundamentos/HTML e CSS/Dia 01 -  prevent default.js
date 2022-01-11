@@ -15,9 +15,8 @@ INPUT_CHECKBOX.addEventListener('click', check);
 
 function text(e){
    let tecla = e.key
-   if (tecla == 'a'){
-   }else{
-    e.preventDefault();
+   if (tecla !== 'a'){
+        e.preventDefault();
    }
 }
 INPUT_TEXT.addEventListener('keypress', text);
