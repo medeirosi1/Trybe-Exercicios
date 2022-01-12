@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        list-style: none;
+        margin: 5px 5px;
+    }
+}
